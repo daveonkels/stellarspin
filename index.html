@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STELLARSPIN :: DOCK-OPS TERMINAL</title>
+  <link rel="stylesheet" href="style.css?v=20260418a" />
+</head>
+<body>
+  <div class="crt">
+    <div class="screen">
+      <header class="topbar">
+        <span class="brand">STELLARSPIN</span>
+        <span class="sep">//</span>
+        <span class="sub">ENDURANCE DOCK-OPS TERMINAL v1.03</span>
+        <span class="blink">_</span>
+      </header>
+
+      <div class="stage">
+        <div class="viewport">
+          <canvas id="game"></canvas>
+          <div id="hint" class="hint" aria-live="polite"></div>
+          <svg class="reticle" viewBox="0 0 900 560" preserveAspectRatio="none" aria-hidden="true">
+            <g stroke="rgba(124,255,158,0.45)" stroke-width="1" fill="none">
+              <polyline points="30,50 30,30 50,30" />
+              <polyline points="870,30 870,30 870,50" />
+              <polyline points="850,30 870,30 870,50" />
+              <polyline points="30,510 30,530 50,530" />
+              <polyline points="850,530 870,530 870,510" />
+            </g>
+            <g stroke="rgba(124,255,158,0.55)" stroke-width="1" fill="none">
+              <line x1="450" y1="250" x2="450" y2="280" />
+              <line x1="450" y1="300" x2="450" y2="330" />
+              <line x1="420" y1="290" x2="450" y2="290" />
+              <line x1="450" y1="290" x2="480" y2="290" />
+              <circle cx="450" cy="290" r="3" />
+              <polyline points="440,20 450,10 460,20" stroke="rgba(255,207,107,0.8)" />
+            </g>
+          </svg>
+        </div>
+
+        <aside class="hud">
+          <div class="hud-block">
+            <div class="label">T-MINUS</div>
+            <div class="value big" id="timer">--:--</div>
+          </div>
+
+          <div class="hud-block">
+            <div class="label">&#916;RPM</div>
+            <div class="value" id="drpm">+0.00</div>
+            <div class="bar"><span id="bar-rpm"></span></div>
+          </div>
+
+          <div class="hud-block">
+            <div class="label">&#916;ANGLE</div>
+            <div class="value" id="dang">+0.0&deg;</div>
+            <div class="bar"><span id="bar-ang"></span></div>
+          </div>
+
+          <div class="hud-block">
+            <div class="label">RANGE</div>
+            <div class="value" id="range">--- m</div>
+            <div class="bar"><span id="bar-range"></span></div>
+          </div>
+
+          <div class="hud-block">
+            <div class="label">FUEL</div>
+            <div class="value" id="fuel">100%</div>
+            <div class="bar"><span id="bar-fuel"></span></div>
+          </div>
+
+          <div class="hud-block lock">
+            <div class="label">LOCK</div>
+            <div id="lock-indicator">
+              <span data-k="rpm">RPM</span>
+              <span data-k="ang">ANG</span>
+              <span data-k="rng">RNG</span>
+            </div>
+          </div>
+
+          <div class="hud-block status">
+            <div class="label">STATUS</div>
+            <div class="value small" id="status">STANDBY</div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="controls">
+        <div><kbd>A</kbd>/<kbd>&larr;</kbd> CCW</div>
+        <div><kbd>D</kbd>/<kbd>&rarr;</kbd> CW</div>
+        <div><kbd>W</kbd>/<kbd>&uarr;</kbd> APPROACH</div>
+        <div><kbd>S</kbd>/<kbd>&darr;</kbd> RETRO</div>
+        <div><kbd>SHIFT</kbd> FINE CTRL</div>
+        <div><kbd>SPACE</kbd> DOCK</div>
+        <div><kbd>R</kbd> RESTART</div>
+      </footer>
+
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <h1>STELLARSPIN</h1>
+          <p class="tagline">// DOCK-OPS TRAINING SIMULATOR</p>
+          <p>
+            The Endurance is <span class="warn">tumbling at high RPM</span> after
+            catastrophic damage. Match its rotation, align your docking port,
+            and close range before orbital decay.
+          </p>
+          <ul>
+            <li><kbd>A</kbd>/<kbd>D</kbd> fire lateral thrusters</li>
+            <li><kbd>W</kbd>/<kbd>S</kbd> approach / retro thrust</li>
+            <li><kbd>SPACE</kbd> engage docking clamps when all three locks are green</li>
+          </ul>
+          <button id="start">&gt; INITIATE DOCKING</button>
+          <p class="tiny">inspired by a scene you know the one</p>
+        </div>
+      </div>
+    </div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="game.js?v=20260418a"></script>
+</body>
+</html>
