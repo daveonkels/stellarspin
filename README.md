@@ -11,7 +11,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/daveonkels/stellarspin?style=flat-square&color=ffcf6b)](https://github.com/daveonkels/stellarspin/stargazers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/daveonkels/stellarspin?style=flat-square&color=7cff9e)](https://github.com/daveonkels/stellarspin/commits/main)
 
-A browser-based docking simulator inspired by the Endurance rendezvous scene from *Interstellar*. Match the ring's rotation, align your docking port, and clamp on — before the timer runs out.
+A browser-based docking simulator inspired by the Endurance rendezvous scene from [*Interstellar*](https://www.imdb.com/title/tt0816692/). Match the ring's rotation, align your docking port, and clamp on — before the timer runs out.
 
 ![stellarspin screenshot](docs/screenshot.jpeg)
 
@@ -99,5 +99,5 @@ stellarspin/
 
 ## Credits
 
-- Inspired by Hans Zimmer's *No Time For Caution* and the Endurance scene from *Interstellar* (2014). The soundtrack is an original procedural piece in the same emotional register — not a reproduction.
+- Inspired by Hans Zimmer's *No Time For Caution* and the Endurance scene from [*Interstellar*](https://www.imdb.com/title/tt0816692/) (2014). The soundtrack is an original procedural piece in the same emotional register — not a reproduction.
 - Built with a lot of help from Claude Code.
