@@ -2,6 +2,15 @@
 
 > _Cooper, what are you doing?_ — **Docking.**
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-7cff9e?style=flat-square)](LICENSE)
+[![three.js r161](https://img.shields.io/badge/three.js-r161-ffcf6b?style=flat-square&logo=three.js&logoColor=ffcf6b)](https://threejs.org/)
+[![Vanilla JS](https://img.shields.io/badge/javascript-vanilla-f7df1e?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![No Build](https://img.shields.io/badge/build-none-7cff9e?style=flat-square)](#tech)
+[![Play in Browser](https://img.shields.io/badge/play-in%20browser-ffcf6b?style=flat-square)](#play)
+[![Inspired by Interstellar](https://img.shields.io/badge/inspired%20by-Interstellar-ff5a5a?style=flat-square)](#credits)
+[![GitHub stars](https://img.shields.io/github/stars/daveonkels/stellarspin?style=flat-square&color=ffcf6b)](https://github.com/daveonkels/stellarspin/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/daveonkels/stellarspin?style=flat-square&color=7cff9e)](https://github.com/daveonkels/stellarspin/commits/main)
+
 A browser-based docking simulator inspired by the Endurance rendezvous scene from *Interstellar*. Match the ring's rotation, align your docking port, and clamp on — before the timer runs out.
 
 ![stellarspin screenshot](docs/screenshot.jpeg)
